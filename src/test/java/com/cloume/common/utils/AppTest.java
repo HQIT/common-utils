@@ -34,7 +34,7 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
+    public void testMapBuilder()
     {
         Map<String, Object> map = MapBuilder.begin("hello", (Object) "world")
         	.and("world", 1000)
@@ -49,5 +49,15 @@ public class AppTest
         assertEquals(true, ((AtomicBoolean) map.get("object")).get());
         assertEquals(false, map.get("boolean"));
         assertEquals(1, ((int[]) map.get("array"))[1]);
+    }
+    
+    public void testArrays() {
+    	String strArray[] = Arrays.from("1", "2", "3");
+    	assertEquals(3, strArray.length);
+    	assertEquals("3", strArray[2]);
+    	
+    	Long[] longArray = Arrays.from(0L, 100L, 50L, 300L);
+    	assertEquals(4, longArray.length);
+    	assertEquals(50L, longArray[2].longValue());
     }
 }
