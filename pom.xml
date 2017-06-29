@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.cloume.common</groupId>
-	<artifactId>common-utils</artifactId>
+	<artifactId>commons-java</artifactId>
 	<version>0.1.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>common-utils</name>
+	<name>commons-java</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
