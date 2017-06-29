@@ -1,4 +1,4 @@
-package com.cloume.common.beanutils;
+package com.cloume.commons.beanutils;
 
 import java.util.Map.Entry;
 

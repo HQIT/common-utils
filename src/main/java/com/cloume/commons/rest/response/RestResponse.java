@@ -1,4 +1,4 @@
-package com.cloume.common.rest.response;
+package com.cloume.commons.rest.response;
 
 public class RestResponse<RT> {
 	

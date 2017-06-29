@@ -1,4 +1,4 @@
-package com.cloume.common.utils;
+package com.cloume.commons.utils;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package com.cloume.common.rest.request;
+package com.cloume.commons.rest.request;
 
 import java.util.Map;
 

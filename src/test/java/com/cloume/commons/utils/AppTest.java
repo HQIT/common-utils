@@ -1,4 +1,4 @@
-package com.cloume.common.utils;
+package com.cloume.commons.utils;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,8 +7,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.cloume.common.beanutils.IConverter;
-import com.cloume.common.beanutils.Updater;
+import com.cloume.commons.beanutils.IConverter;
+import com.cloume.commons.beanutils.Updater;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
