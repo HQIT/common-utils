@@ -56,7 +56,7 @@
 					<!-- disable webpage processing -->
 					<outputDirectory>${project.build.directory}/mvn-repo</outputDirectory>
 					<!-- matches distribution management repository url above -->
-					<branch>refs/heads/master</branch>
+					<branch>refs/heads/commons-java</branch>
 					<!-- remote branch name -->
 					<includes>
 						<include>**/*</include>
