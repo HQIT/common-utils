@@ -1,9 +1,9 @@
 package com.cloume.commons.utils;
 
-final public class Wrapper<T> {
+public class Wrapper<T> {
 	private T object;
 	
-	Wrapper(T object) {
+	protected Wrapper(T object) {
 		this.object = object;
 	}
 	

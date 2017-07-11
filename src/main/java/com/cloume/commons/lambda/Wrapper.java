@@ -1,20 +1,8 @@
 package com.cloume.commons.lambda;
 
-final public class Wrapper<T> {
-	private T object;
-	
+@Deprecated
+final public class Wrapper<T> extends com.cloume.commons.utils.Wrapper<T>{
 	Wrapper(T object) {
-		this.object = object;
-	}
-	
-	public void set(T newValue) {
-		object = newValue;
-	}
-	public T get() {
-		return object;
-	}
-	
-	static public <R> Wrapper<R> wrap(R object) {
-		return new Wrapper<R>(object);
+		super(object);
 	}
 }
