@@ -19,9 +19,13 @@ public interface IConverter {
 		return new SimpleEntry(key, value);
 	}
 	
-	class SimpleEntry implements Entry<String, Object> {
+	static public class SimpleEntry implements Entry<String, Object> {
 		private String key;
 		private Object value;
+		
+		static public SimpleEntry wrap(String key, Object value) {
+			return new SimpleEntry(key, value);
+		}
 		
 		SimpleEntry(String key, Object value) {
 			this.key = key;
