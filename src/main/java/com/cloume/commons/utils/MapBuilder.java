@@ -22,6 +22,18 @@ public class MapBuilder<K, V>
 		getMap().put(key, value);
 		return this;
 	}
+
+	/**
+	 * 满足predicate则执行and
+	 * @param key
+	 * @param value
+	 * @param predicate
+	 * @return
+	 */
+	public MapBuilder<K, V> and(K key, V value, boolean predicate) {
+		if(!predicate) return this;
+		this.and(key, value);
+	}
 	
 	public Map<K, V> build() {
 		return getMap();
