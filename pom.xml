@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.cloume.common</groupId>
 	<artifactId>commons-java</artifactId>
-	<version>0.1.1-SNAPSHOT</version>
+	<version>1.1.2</version>
 	<packaging>jar</packaging>
 	<name>commons-java</name>
 	<url>https://github.com/HQIT/maven-repo</url>

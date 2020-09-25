@@ -32,7 +32,7 @@ public class MapBuilder<K, V>
 	 */
 	public MapBuilder<K, V> and(K key, V value, boolean predicate) {
 		if(!predicate) return this;
-		this.and(key, value);
+		return this.and(key, value);
 	}
 	
 	public Map<K, V> build() {

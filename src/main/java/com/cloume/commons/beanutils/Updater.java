@@ -87,8 +87,9 @@ public class Updater<T> {
 			
 			try{
 				field.set(object, value); 
-			} catch(Exception e) { 
-				System.err.println(String.format("failed set field %s to value %s", key, value));
+			} catch(Exception e) {
+				System.err.println(String.format("exception: %s", e.getMessage()));
+				System.err.println(String.format("failed set field %s to value %s", key, String.valueOf(value).substring(0, 64)));
 			}
 		}
 		
