@@ -1,5 +1,7 @@
 package com.cloume.commons.beanutils;
 
+import org.apache.commons.lang3.StringUtils;
+
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -38,7 +40,7 @@ public class Updater<T> {
 		}
 
 		if(result == null) {
-			System.err.println(String.format("can not found field %s on object %s", fieldName, object));
+			System.err.println(String.format("can not found field %s on object %s", fieldName, StringUtils.left(String.valueOf(object), 64)));
 		}
 
 		return result;
@@ -89,7 +91,7 @@ public class Updater<T> {
 				field.set(object, value); 
 			} catch(Exception e) {
 				System.err.println(String.format("exception: %s", e.getMessage()));
-				System.err.println(String.format("failed set field %s to value %s", key, String.valueOf(value).substring(0, 64)));
+				System.err.println(String.format("failed set field %s to value %s", key, StringUtils.left(String.valueOf(value), 64)));
 			}
 		}
 		
